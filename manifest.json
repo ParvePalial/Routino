@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Goal Reminder",
+    "version": "1.0",
+    "description": "Set and track your goals with timely reminders",
+    "permissions": ["storage", "notifications", "alarms"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icons/iconpalm48.png",
+      "128": "icons/iconpalm.png"
+    }
+  }

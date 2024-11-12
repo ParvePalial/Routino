@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Goal Reminder</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+      }
+      .goal-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .goal-list {
+        margin-top: 20px;
+      }
+      .goal-item {
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin: 5px 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .delete-btn {
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="goal-form">
+      <h2>Add New Goal</h2>
+      <input type="text" id="goalTitle" placeholder="Goal Title">
+      <textarea id="goalDescription" placeholder="Goal Description"></textarea>
+      <input type="datetime-local" id="goalDeadline">
+      <button id="addGoal">Add Goal</button>
+    </div>
+    
+    <div class="goal-list">
+      <h2>Your Goals</h2>
+      <div id="goals"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+  </html>
+  
